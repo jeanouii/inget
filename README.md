@@ -17,7 +17,7 @@ Maven depedency
 <dependency>
   <groupId>org.tomitribe.inget</groupId>
   <artifactId>inget-api</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 </dependency>
 ```
 
@@ -48,7 +48,7 @@ To setup the plugin, you just need to add the inget maven plugin as following :
 <plugin>
 <groupId>org.tomitribe.inget</groupId>
 <artifactId>inget-maven-plugin</artifactId>
-<version>${version.inget}</version>
+<version>1.0</version>
 <configuration>
   <modelPackage>yourpackage.model</modelPackage>
   <resourcePackage>yourpackage.rest</resourcePackage>
@@ -217,7 +217,7 @@ Add the inget client java dependecy:
  <dependency>
     <groupId>org.tomitribe.inget</groupId>
     <artifactId>inget-client-java</artifactId>
-    <version>${version.inget}</version>
+    <version>1.0</version>
 </dependency>
 ```
 Also add the jax-rs resources as a dependency in your pom file with the classifier you choose and scope *provided* so it is not incorporated to the client jar.
@@ -226,7 +226,7 @@ Also add the jax-rs resources as a dependency in your pom file with the classifi
 <dependency>
     <groupId>yourpackage</groupId>
     <artifactId>resources</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <classifier>resources</classifier>
     <scope>provided</scope>
 </dependency>
@@ -256,7 +256,7 @@ Add the inget command-line dependecy:
 <dependency>
     <groupId>org.tomitribe.inget</groupId>
     <artifactId>inget-client-commandline</artifactId>
-    <version>${version.inget}</version>
+    <version>1.0</version>
 </dependency>
 ```
 Make sure you have the jax-rs resources jar as a dependency in you pom file as well.
@@ -377,7 +377,7 @@ To add documentation to your project add the configuration below
       <dependency>
         <groupId>${yourpackage}</groupId>
         <artifactId>resources</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
       </dependency>
       <dependency>
         <groupId>com.tomitribe.swagger2markup</groupId>
